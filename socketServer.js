@@ -6,7 +6,7 @@ const authSocket = (socket, next) => {
 
   if (token) {
     try {
-      const decoded = jwt.verify(token, 12345);
+      const decoded = jwt.verify(token, process.env.TOKEN_KEY);
       socket.decoded = decoded;
       next();
     } catch (err) {
