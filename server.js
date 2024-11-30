@@ -16,7 +16,7 @@ const Post = require("./models/Post");
 const httpServer = require("http").createServer(app);
 const io = require("socket.io")(httpServer, {
   cors: {
-    origin: ["http://localhost:3000", "http://project-postit.com"],
+    origin: ["http://localhost:3000", "http://project-postit.com", "https://jellyfish-app-3ei5q.ondigitalocean.app/"],
   },
 });
 
