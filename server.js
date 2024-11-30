@@ -24,7 +24,7 @@ io.use(authSocket);
 io.on("connection", (socket) => socketServer(socket));
 
 mongoose.connect(
-  "mongodb+srv://collin:Phyco1212@cluster0.cg7rv.mongodb.net/",
+  "mongodb+srv://doadmin:3125q9xO0BVHsA76@dbaas-db-3346547-c478136d.mongo.ondigitalocean.com/admin?authSource=admin&replicaSet=dbaas-db-3346547&tls=true",
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("MongoDB connected");
